@@ -386,11 +386,13 @@ namespace Microsoft.PowerShell
         }
 
         /// <summary>
-        /// Selects one the availabled named register for
+        /// Selects one the available named register for
         /// subsequent yank/paste operations.
         /// PSReadLine supports the following named registers:
         ///
-        /// - "_" (underscore): void register
+        /// - '_' (underscore): void register
+        /// - '"' (quote): host system clipboard
+        /// - '+' (plus): synonym for host system clipboard
         ///
         /// In addition, PSReadLine supports an internal in-memory
         /// unnamed register which is selected by default for all
